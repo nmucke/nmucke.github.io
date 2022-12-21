@@ -1,5 +1,5 @@
 baseURL = 'https://nmucke.gituhb.io/'
-title = "Creative portfolio"
+title = "Nikolaj Takata Mücke"
 theme = "hugo-creative-portfolio-theme"
 languageCode = "en-us"
 # Enable comments by entering your Disqus shortname
@@ -29,7 +29,7 @@ googleAnalytics = ""
      # - send a dummy email yourself to confirm your account
      # - click the confirm link in the email from www.formspree.io
      # - you're done. Happy mailing!
-  email = "you@yoursite.com"
+  email = "nmucke@gmail.com"
 
     # Optional Matomo analytics (formerly piwik)
       # [params.analytics.matomo]
@@ -40,6 +40,8 @@ googleAnalytics = ""
       #  # Optional integrity check hash
       #  hash = ""
 
+  profilePicture = "images/profile_pic.png"
+
   # Nav links in the side bar
   [[params.navlinks]]
   name = "Home"
@@ -49,6 +51,10 @@ googleAnalytics = ""
   [[params.navlinks]]
   name = "About"
   url = "about/"
+
+  [[params.navlinks]]
+  name = "Publications"
+  url = "publications/"
 
   [[params.navlinks]]
   name = "Get in touch"
