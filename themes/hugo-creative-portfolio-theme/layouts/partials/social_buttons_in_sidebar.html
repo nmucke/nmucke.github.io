@@ -54,4 +54,9 @@
     <i class="fa fa-whatsapp"></i>
   </a>
   {{end}}
+  {{ with .Site.Params.social.googlescholar }}
+  <a href="{{ . }}" data-animate-hover="pulse" class="external" title="Google Scholar" rel="me">
+    <i class="fa fa-google-scholar"></i>
+  </a>
+  {{end}}
 </p>
