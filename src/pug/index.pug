@@ -39,15 +39,17 @@ html(lang='en')
                     li.nav-item
                         a.nav-link.js-scroll-trigger(href='#experience') Experience
                     li.nav-item
-                        a.nav-link.js-scroll-trigger(href='#education') Education
-                    li.nav-item
                         a.nav-link.js-scroll-trigger(href='#publications') Publications
                     li.nav-item
                         a.nav-link.js-scroll-trigger(href='#teaching_and_supervision') Teaching & Supervision
+                    li.nav-item
+                        a.nav-link.js-scroll-trigger(href='#conferences_workshops_masterclasses') Conferences, Workshops & Masterclasses
                     //li.nav-item
                     //    a.nav-link.js-scroll-trigger(href='#skills') Skills
                     li.nav-item
                         a.nav-link.js-scroll-trigger(href='#research_interests') Research Interests
+                    li.nav-item
+                        a.nav-link.js-scroll-trigger(href='#education') Education
                     li.nav-item
                         a.nav-link.js-scroll-trigger(href='#awards') Awards
                     li.nav-item
@@ -155,45 +157,7 @@ html(lang='en')
 
             hr.m-0
 
-            // Education
-            section#education.resume-section
-                .resume-section-content
-                    h2.mb-5 Education
-
-                    .subheading.mb-3 Degrees
-
-                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
-                        .flex-grow-1
-                            h5.mb-0 Mathematical Modeling and Computation
-                            .subsubheading.mb-3 Master of Science, Technical University of Denmark
-                        .flex-shrink-0
-                            span.text-primary September 2016 - January 2019
-
-
-                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
-                        .flex-grow-1
-                            h5.mb-0 Mathematics and Technology
-                            .subsubheading.mb-3 Bachelor of Science, Technical University of Denmark
-                        .flex-shrink-0
-                            span.text-primary September 2013 - June 2016
-                    
-
-                    .subheading.mb-3 Exchange Semesters
-                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
-                        .flex-grow-1
-                            h5.mb-0 Technical University of Munich
-                            .subsubheading.mb-3 Masters, Fakultät für Mathematik
-                        .flex-shrink-0
-                            span.text-primary 2017 - 2018
-
-                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
-                        .flex-grow-1
-                            h5.mb-0 Adelaide University
-                            .subsubheading.mb-3 Bachelors
-                        .flex-shrink-0
-                            span.text-primary 2015
-            hr.m-0
-
+            
             // Publications
             section#publications.resume-section
                 .resume-section-content
@@ -204,8 +168,35 @@ html(lang='en')
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
                             h3.mb-0 
+                            .subsubheading.mb-3 #[a( href='https://www.sciencedirect.com/science/article/pii/S0898122123003280' ) Markov Chain Generative Adversarial Neural Networks for Solving Bayesian Inverse Problems in Physics Applications]
+                            div Authors: Nikolaj T. Mücke, Benjamin Sanderse, Sander Bohté, and Cornelis W. Oosterlee
+                            p Published in the special issue Scientific Machine Learning: Blending of traditional mechanistic modeling with machine learning methodologies in the journal Computers & Mathematics with Applications 
+                        .flex-shrink-0
+                            span.text-primary 2023
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 
+                            .subsubheading.mb-3 #[a( href='https://www.mdpi.com/1424-8220/23/13/6179' ) A Probabilistic Digital Twin for Leak Localization in Water Distribution Networks Using Generative Deep Learning]
+                            div Authors: Nikolaj T. Mücke, Prerna Pandey, SHashi Jain, Sander M. Bohté, and Cornelis W. Oosterlee
+                            p Published in Sensors
+                        .flex-shrink-0
+                            span.text-primary 2023
+                        
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 
+                            .subsubheading.mb-3 #[a( href='http://www.iwwwfb.org/Abstracts/iwwwfb37/IWWWFB37GLOBAL013.pdf' ) Reduced Order Modelling for Dispersive and Nonlinear Water Wave Modelling]
+                            div Authors: Fatma Güler, Nikolaj T. Mücke, Allan Peter Engsig-Karup
+                            p Published in Proceedings of the 37th International Workshop on Water Waves and Floating Bodies
+                        .flex-shrink-0
+                            span.text-primary 2022
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 
                             .subsubheading.mb-3 #[a( href='https://www.sciencedirect.com/science/article/pii/S1877750321000934' ) Reduced order modeling for parameterized time-dependent PDEs using spatially and memory aware deep learning]
-                            div Authors: Nikolaj T. Mücke, Sander Bohté, and Cornelis W. Oosterlee
+                            div Authors: Nikolaj T. Mücke, Sander M. Bohté, and Cornelis W. Oosterlee
                             p Published in Journal of Computational Science
                         .flex-shrink-0
                             span.text-primary 2021
@@ -219,16 +210,8 @@ html(lang='en')
                         .flex-shrink-0
                             span.text-primary 2019
                     
-                    .subheading.mb-3 Preprints
+                    //.subheading.mb-3 Preprints
 
-                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
-                        .flex-grow-1
-                            h3.mb-0 
-                            .subsubheading.mb-3 #[a( href='https://arxiv.org/abs/2111.12408' ) Markov Chain Generative Adversarial Neural Networks for Solving Bayesian Inverse Problems in Physics Applications]
-                            div Authors: Nikolaj T. Mücke, Benjamin Sanderse, Sander Bohté, and Cornelis W. Oosterlee
-                            p Not published yet
-                        .flex-shrink-0
-                            span.text-primary 2022
 
             hr.m-0
 
@@ -253,6 +236,13 @@ html(lang='en')
                             .subsubheading.mb-1 Master thesis, Utrecht University
                         .flex-shrink-0
                             span.text-primary 2022 - 2023
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h5.mb-0 Hamiltonian Neural Networks for Fluid Flows
+                            .subsubheading.mb-1 Internship, Centrum Wiskunde & Informatica
+                        .flex-shrink-0
+                            span.text-primary 2021
                     
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
@@ -262,6 +252,14 @@ html(lang='en')
                             span.text-primary 2020 - 2021
                     
                     .subheading.mb-3 Teaching
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h5.mb-0 #[a( href='https://www.cwi.nl/en/events/masterclass-ci-12-13-may-2022/computation-imaging-masterclass-semester-program/' ) Computational Imaging masterclass]
+                            .subsubheading.mb-1 Centrum Wiskunde & Informatica
+                            .subsubheading.mb-1  - Lecturing
+                        .flex-shrink-0
+                            span.text-primary Spring 2022
 
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
@@ -298,6 +296,62 @@ html(lang='en')
             hr.m-0
 
 
+            // Conferences, Workshops, masterclasses
+            section#conferences_workshops_masterclasses.resume-section
+                .resume-section-content
+                    h2.mb-5 Conferences, Workshops & Masterclasses
+
+                    .subheading.mb-3 Organized by Me
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h5.mb-0 Deep Learning-Based Latent-Space Models for Scientific Computing
+                            .subsubheading.mb-1 Minisymposium, SIAM Conference on Computational Science and Engineering
+                            .subsubheading.mb-1 Co-Organizer: Wouter Edeling
+                        .flex-shrink-0
+                            span.text-primary 2023
+
+                    
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h5.mb-0 #[a( href='https://www.cwi.nl/en/groups/scientific-computing/events/workshop-digital-twins-for-pipe-transport-networks/' ) Workshop Digital Twins for Pipe Transport Networks]
+                            .subsubheading.mb-1 Workshop, Centrum Wiskunde & Informatica
+                            .subsubheading.mb-1 Co-Organizers: Prerna Pandey, Shashi Jain, Kees W. Oosterlee, Sander M. Bohte
+                        .flex-shrink-0
+                            span.text-primary 2023
+                            
+                    
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h5.mb-0 Machine Learning and Stochastic Modelling for Dynamical Systems
+                            .subsubheading.mb-1 Minisymposium, SIAM Conference on Uncertainty Quantification
+                            .subsubheading.mb-1 Co-Organizer: Wouter Edeling
+                        .flex-shrink-0
+                            span.text-primary 2022
+                    
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h5.mb-0 #[a( href='https://www.cwi.nl/en/groups/scientific-computing/events/workshop-30-november-2021/machine-learning-for-physics-based-modeling/' ) Workshop on Machine Learning for Physics-Based Modeling] 
+                            .subsubheading.mb-1 Workshop, Centrum Wiskunde & Informatica
+                            .subsubheading.mb-1 Co-Organizers: Prerna Pandey, Shashi Jain, Kees W. Oosterlee, Sander M. Bohte
+                        .flex-shrink-0
+                            span.text-primary 2021
+                            
+
+                    
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h5.mb-0 #[a( href='https://www.cwi.nl/en/groups/scientific-computing/events/workshop-20-november-2020/ai-and-iot-for-flow-modeling/' ) AI and IoT for Flow Modeling] 
+                            .subsubheading.mb-1 Workshop, Centrum Wiskunde & Informatica
+                            .subsubheading.mb-1 Co-Organizers: Shashi Jain, Kees W. Oosterlee, Sander M. Bohte
+                        .flex-shrink-0
+                            span.text-primary 2020
+                            
+                    
+            hr.m-0
+
+
             // Research Interests
             section#research_interests.resume-section
                 .resume-section-content
@@ -310,6 +364,62 @@ html(lang='en')
                     //    | When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.
 
             hr.m-0
+
+            // Education
+            section#education.resume-section
+                .resume-section-content
+                    h2.mb-5 Education
+
+                    .subheading.mb-3 Degrees
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h5.mb-0 Mathematical Modeling and Computation
+                            .subsubheading.mb-3 Master of Science, Technical University of Denmark
+                        .flex-shrink-0
+                            span.text-primary September 2016 - January 2019
+
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h5.mb-0 Mathematics and Technology
+                            .subsubheading.mb-3 Bachelor of Science, Technical University of Denmark
+                        .flex-shrink-0
+                            span.text-primary September 2013 - June 2016
+                    
+
+                    .subheading.mb-3 Exchange Semesters
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h5.mb-0 Technical University of Munich, Germany
+                            .subsubheading.mb-3 Masters, Fakultät für Mathematik
+                        .flex-shrink-0
+                            span.text-primary 2017 - 2018
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h5.mb-0 Adelaide University, Australia
+                            .subsubheading.mb-3 Bachelors
+                        .flex-shrink-0
+                            span.text-primary 2015
+
+
+                    .subheading.mb-3 Summer/Winter Schools
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h5.mb-0 International Graduate Summer School on ”Frontiers of Applied and Computational Mathematics”
+                            .subsubheading.mb-3 Shanghai Jiao Tong University, China
+                        .flex-shrink-0
+                            span.text-primary Summer 2018
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h5.mb-0 Experiencing China
+                            .subsubheading.mb-3 Tsinghua University, China
+                        .flex-shrink-0
+                            span.text-primary Summer 2017
+            hr.m-0
+
 
             // Awards
             section#awards.resume-section
@@ -332,7 +442,19 @@ html(lang='en')
                             span.fa-li
                                 i.fas.fa-certificate.text-warning
                             | Coursera - Deep Learning Specialization
-                            
+            
+
+            // Spatialise
+            section#spatialise.resume-section
+                .resume-section-content
+                    h2.mb-5 #[a( href='https://spatiali.se/' ) Spatialise] 
+                    p
+                        | At Spatialise we are developing tool for predicting soil organic carbon (SOC) in agricultural fields. 
+                        | The tool is based on a machine learning and remote sensing and enables instantanious predictions of SOC
+                        | in large areas. My role as the AI lead includes the development of machine learning algorithms and
+                        | MLOps pipelines for model training, testing, and deployment.
+
+            hr.m-0
 
         // Bootstrap core JS
         script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js')
