@@ -52,8 +52,8 @@ html(lang='en')
                         a.nav-link.js-scroll-trigger(href='#education') Education
                     li.nav-item
                         a.nav-link.js-scroll-trigger(href='#awards') Awards
-                    li.nav-item
-                        a.nav-link.js-scroll-trigger(href='#spatialise') Spatialise
+                    //- li.nav-item
+                    //-     a.nav-link.js-scroll-trigger(href='#spatialise') Spatialise
 
         // Page Content
         .container-fluid.p-0
@@ -66,11 +66,10 @@ html(lang='en')
                         span.text-primary Mücke
                     .subheading.mb-5
                         | 
-                        a(href='mailto:nikolaj.mucke@cwi.nl') nikolaj.mucke@cwi.nl · 
-                        a(href='mailto:nikolaj@spatiali.se') nikolaj@spatiali.se · 
+                        a(href='mailto:ntmucke@tudelft.nl') ntmucke@tudelft.nl · 
                         a(href='mailto:nmucke@gmail.com') nmucke@gmail.com
                     p.lead.mb-5
-                        | I am a postdoc at the Centrum Wiskunde & Informatica (CWI) in Amsterdam, the Netherlands. 
+                        | I am a postdoc at Delft University of Technology, the Netherlands. 
                         | My research interests include
                         | scientific computing and deep learning with a focus on generative models, uncertainty quantification, 
                         | data assimilation, physics-consistent machine learning, and fluid dynamics.
@@ -93,15 +92,30 @@ html(lang='en')
                     h2.mb-5 Experience
 
                     .subheading.mb-3 Current
+                    
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h5.mb-0 Postdoc
+                            .subsubheading.mb-3 Delft University of Technology
+                            p
+                                | I am working as a postdoc in #[a( href='https://www.urbanair-project.eu/' ) UrbanAIR] project.
+                                | The goal of the project is to develop a framework for urban air quality and heat dynamics forecasting.
+                                | My role is specifically focused on the development of data assimilation and uncertainty quantification methods using 
+                                | deep learning techniques.
+                        .flex-shrink-0
+                            span.text-primary November 2025 - Present
+
+                    .subheading.mb-3 Previous
+
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
                             h5.mb-0 Postdoc
                             .subsubheading.mb-3 Centrum Wiskunde & Informatica
                             p
-                                | Together with Benjamin Sanderse, I am developing generative for physics applicatiions.
-                                | The aim is to perform probabilistic foreacasting that adhere to the underlying laws of physics.
+                                | Together with Benjamin Sanderse, I developed generative models for physics applicatiions.
+                                | The aim was to perform probabilistic forecasting and posterior sampling that adhere to the underlying laws of physics.
                         .flex-shrink-0
-                            span.text-primary April 2024 - Present
+                            span.text-primary April 2024 - October 2025
 
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
@@ -114,10 +128,7 @@ html(lang='en')
                                 | Furthermore, I am responsible for the ML engineer aspects such as
                                 | model deployment, monitoring, and scaling.
                         .flex-shrink-0
-                            span.text-primary February 2022 - Present
-
-
-                    .subheading.mb-3 Previous
+                            span.text-primary February 2022 - August 2025
 
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
@@ -498,16 +509,16 @@ html(lang='en')
             
 
             // Spatialise
-            section#spatialise.resume-section
-                .resume-section-content
-                    h2.mb-5 #[a( href='https://spatiali.se/' ) Spatialise] 
-                    p
-                        | At Spatialise we are developing tool for predicting soil organic carbon (SOC) in agricultural fields. 
-                        | The tool is based on a machine learning and remote sensing and enables instantanious predictions of SOC
-                        | in large areas. My role as the AI lead includes the development of machine learning algorithms and
-                        | MLOps pipelines for model training, testing, and deployment.
+            //- section#spatialise.resume-section
+            //-     .resume-section-content
+            //-         h2.mb-5 #[a( href='https://spatiali.se/' ) Spatialise] 
+            //-         p
+            //-             | At Spatialise we are developing tool for predicting soil organic carbon (SOC) in agricultural fields. 
+            //-             | The tool is based on a machine learning and remote sensing and enables instantanious predictions of SOC
+            //-             | in large areas. My role as the AI lead includes the development of machine learning algorithms and
+            //-             | MLOps pipelines for model training, testing, and deployment.
 
-            hr.m-0
+            //- hr.m-0
 
         // Bootstrap core JS
         script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js')
