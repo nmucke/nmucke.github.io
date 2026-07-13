@@ -1,0 +1,337 @@
+/* ==========================================================================
+   Design tokens
+   ========================================================================== */
+
+:root {
+  --bg: #ffffff;
+  --text: #18181b;
+  --text-secondary: #52525b;
+  --text-muted: #6b6b76;
+  --accent: #0b6bcb;
+  --accent-dark: #084e94;
+  --border: #e4e4e7;
+
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --content-width: 44rem;
+}
+
+/* ==========================================================================
+   Reset / base
+   ========================================================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-sans);
+  color: var(--text);
+  margin: 0;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--accent) 35%, transparent);
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  color: var(--accent-dark);
+  text-decoration-color: currentColor;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* ==========================================================================
+   Layout helpers
+   ========================================================================== */
+
+.header-inner,
+main section,
+.site-footer {
+  max-width: var(--content-width);
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
+
+main section {
+  padding-block: 3.5rem;
+  scroll-margin-top: 5rem;
+}
+
+main section + section {
+  border-top: none;
+}
+
+/* ==========================================================================
+   Header / nav
+   ========================================================================== */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding-block: 0.85rem;
+}
+
+.brand {
+  font-weight: 600;
+  color: var(--text);
+  text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.brand:hover {
+  color: var(--accent);
+}
+
+.site-nav {
+  display: flex;
+  gap: 1.25rem;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.site-nav::-webkit-scrollbar {
+  display: none;
+}
+
+.site-nav a {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  white-space: nowrap;
+  padding-block: 0.25rem;
+}
+
+.site-nav a:hover,
+.site-nav a.active {
+  color: var(--accent);
+}
+
+/* ==========================================================================
+   Headings
+   ========================================================================== */
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.35rem;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+  margin-bottom: 1.75rem;
+}
+
+h3 {
+  font-size: 1.02rem;
+  font-weight: 600;
+}
+
+h3 a {
+  color: var(--text);
+  text-decoration-color: color-mix(in srgb, var(--accent) 35%, transparent);
+}
+
+h3 a:hover {
+  color: var(--accent-dark);
+}
+
+/* ==========================================================================
+   About section
+   ========================================================================== */
+
+#about {
+  padding-top: 2.5rem;
+}
+
+.profile-photo {
+  display: block;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.25rem;
+}
+
+.role-line {
+  color: var(--text-secondary);
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+#about p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+
+.contact-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.75rem;
+}
+
+.icon-links {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.icon-link {
+  color: var(--text-muted);
+  line-height: 0;
+  text-decoration: none;
+}
+
+.icon-link:hover {
+  color: var(--accent);
+}
+
+/* ==========================================================================
+   Entry pattern (Experience, Publications, Teaching, Activities, Education, Awards)
+   ========================================================================== */
+
+.entry {
+  display: grid;
+  grid-template-columns: 8.5rem 1fr;
+  gap: 1.5rem;
+  padding-block: 1.1rem;
+}
+
+.entry-meta {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  padding-top: 0.2rem;
+}
+
+.entry-org {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  margin-top: 0.2rem;
+}
+
+.entry-authors {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  margin-top: 0.3rem;
+}
+
+.entry-venue {
+  font-size: 0.88rem;
+  font-style: italic;
+  color: var(--text-muted);
+  margin-top: 0.15rem;
+}
+
+.entry-body p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin-top: 0.5rem;
+}
+
+.subgroup {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin-top: 2rem;
+}
+
+.subgroup:first-of-type {
+  margin-top: 0;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.site-footer {
+  padding-block: 2.5rem 3.5rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+
+@media (max-width: 640px) {
+  .entry {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+  }
+
+  .entry-meta {
+    padding-top: 0;
+  }
+
+  h1 {
+    font-size: 1.85rem;
+  }
+}
